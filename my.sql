@@ -18,13 +18,13 @@ CREATE TABLE EMPLOYEE (
 );
 
 -- insert
-INSERT INTO EMPLOYEE VALUES (0001, 'Clark', '12','Tula');
-INSERT INTO EMPLOYEE VALUES (0002, 'Dave', '18','Moscow');
-INSERT INTO EMPLOYEE VALUES (0004, 'Aba', '56','Tulsa');
-INSERT INTO EMPLOYEE VALUES (0005, 'Avasa', '29','Moscow');
-INSERT INTO EMPLOYEE VALUES (0006, 'Avdasa', '33','Baku');
-INSERT INTO EMPLOYEE VALUES (0007, 'Azereva', '7','Moscow');
-INSERT INTO EMPLOYEE VALUES (0008, 'Amreva', '78','Moscow');
+INSERT INTO EMPLOYEE VALUES (1, 'Clark', '12','Tula');
+INSERT INTO EMPLOYEE VALUES (2, 'Dave', '18','Moscow');
+INSERT INTO EMPLOYEE VALUES (4, 'Aba', '56','Tulsa');
+INSERT INTO EMPLOYEE VALUES (5, 'Avasa', '29','Moscow');
+INSERT INTO EMPLOYEE VALUES (6, 'Avdasa', '33','Baku');
+INSERT INTO EMPLOYEE VALUES (7, 'Azereva', '7','Moscow');
+INSERT INTO EMPLOYEE VALUES (8, 'Amreva', '78','Moscow');
 
 -- fetch 
-SELECT * FROM EMPLOYEE WHERE city = 'Moscow' AND age < 30 AND age > 17;
+SELECT name FROM EMPLOYEE WHERE city = 'Moscow' AND age < 30 AND age > 17;
